@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My cosplay</title>
+    <style>
+      body {
+        background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+      }
+      h1 {
+        text-align: center;
+        color: blueviolet;
+        text-shadow: #006feeb2 0 0 10px, #be2dbeb2 5px 5px 5px;
+        filter: glow(color=#EEEE00, strength=3);
+        font-family: Curlz MT;
+        font-size: 60px;
+      }
+      h2 {
+        text-align: center;
+        color: blue;
+        font-family: Harrington;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 150px;
+        max-width: 100%;
+        box-shadow: 8px 8px 8px #a059e2a1;
+      }
+      button {
+        background-color: blueviolet;
+        border: blueviolet;
+        border-radius: 20px;
+        color: white;
+        margin: 0 auto;
+        padding: 30px 20px;
+        font-family: Harrington;
+        font-size: 30px;
+        box-shadow: 8px 8px 8px #a059e2a1;
+        cursor: pointer;
+        display: block;
+        transition: all 200ms ease-in-out;
+      }
+
+      strong {
+        color: blueviolet;
+        margin: 0 0 0 15px;
+      }
+      p {
+        text-align: justify;
+        padding: 0 30px;
+        font-family: Papyrus;
+      }
+      a {
+        text-decoration: none;
+      }
+      .copyright {
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      img:hover {
+        border-radius: 30px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: #ce0bf5;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background: #1ad6d6;
+        color: white;
+        border: 1px solid #1a64d6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Do you know cosplay?</h1>
+    <h2>I like it and I'm doing it!</h2>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/130/original/917943_531357693711197_329211864_n.jpg?1627495248"
+      alt="Me as Stocking from <Panty&Stocking with Garterbelt"
+      anime
+    />
+    <br />
+    <hr />
+    <p>
+      <strong>Cosplay</strong>, a portmanteau of "costume play", is an activity
+      and performance art in which participants called cosplayers wear costumes
+      and fashion accessories to represent a specific character. Cosplayers
+      often interact to create a subculture, and a broader use of the term
+      "cosplay" applies to any costumed role-playing in venues apart from the
+      stage. Any entity that lends itself to dramatic interpretation may be
+      taken up as a subject. Favorite sources include anime, cartoons, comic
+      books, manga, television series, and video games. Cosplay grew out of the
+      practice of fan costuming at science fiction conventions, beginning with
+      Morojo's "futuristicostumes" created for the 1st World Science Fiction
+      Convention held in New York City in 1939. The Japanese term "cosplay"
+      (コスプレ, kosupure) was coined in 1984. A rapid growth in the number of
+      people cosplaying as a hobby since the 1990s has made the phenomenon a
+      significant aspect of popular culture in Japan, as well as in other parts
+      of East Asia and in the Western world. Cosplay events are common features
+      of fan conventions, and today there are many dedicated conventions and
+      competitions, as well as social networks, websites, and other forms of
+      media centered on cosplay activities. Cosplay is very popular among all
+      genders, and it is not unusual to see genders switched.
+      <br />
+      <a href="https://en.wikipedia.org/wiki/Cosplay" target="blank"
+        >Learn more about cosplay on Wikipedia 🔍</a
+      >
+    </p>
+    <hr />
+    <br />
+    <button>Click to try cosplay!</button>
+    <div class="copyright">
+      This page was made by
+      <a href="https://www.instagram.com/rina_luna_2045/" target="blank"
+        >✨Rina R✨</a
+      >
+    </div>
+
+    <script>
+      function tryCosplay() {
+        let name = prompt("What is your name or nickname?");
+        let experience = prompt("Have you ever tried cosplay?");
+        experience = experience.toLowerCase();
+        experience = experience.trim();
+        experience = experience.replace("of cause", "yes");
+        experience = experience.replace("ofcause", "yes");
+        experience = experience.replace("ofc", "yes");
+        experience = experience.replace("never", "no");
+        if (experience === "yes") {
+          alert("You are cool! I'd like to see your works!");
+        } else {
+          if (experience === "no") {
+            alert("How about to try? It's fun!");
+          } else {
+            alert("I don't undeerstand you +, try again. Yes or no?");
+          }
+        }
+      }
+      let tryButton = document.querySelector("button");
+      tryButton.addEventListener("click", tryCosplay);
+    </script>
+  </body>
+</html>
